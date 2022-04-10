@@ -1,4 +1,5 @@
 import './App.css';
+import UseReducer from './hooks/UseReducer';
 import UseState from './hooks/UseState';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <h2>Train React Hooks</h2>
       <UseState />
+      <UseReducer />
     </div>
   );
 }
