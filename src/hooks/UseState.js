@@ -4,11 +4,13 @@ const UseState = () => {
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
+  // Change value in input
   const changeInputValue = (event) => {
     let newValue = event.target.value;
     setInputValue(newValue);
   };
 
+  // Add item to the List
   const addItem = () => {
     const newItem = {
       id: Math.floor(Math.random() * 1000),
@@ -19,7 +21,7 @@ const UseState = () => {
   };
 
   return (
-    <div>
+    <section className="state">
       <h3>UseState</h3>
       <input
         placeholder="Write a new item in the list"
@@ -39,7 +41,7 @@ const UseState = () => {
           </p>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
